@@ -20,7 +20,7 @@
 header {
     width: 100%;
     background-color: var(--header_bg);
-    padding: 3px 0px;
+    padding: 5px 0px;
 
 }
 #banner_holder{
@@ -97,7 +97,7 @@ header {
 }
 .contact_info{
     line-height: 15px;
-    font-size: .65rem;
+    font-size: .7rem;
     font-weight: 400;
     cursor: pointer;
     color: var(--menu_sleep);
