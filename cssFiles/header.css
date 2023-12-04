@@ -66,13 +66,13 @@ header {
 
 #title{
     font-family: Oswald;
-    font-size: 1.0rem; 
-    line-height: 20px;
+    font-size: 1.2rem; 
+    line-height: 22px;
     font-weight: 500;
 }
 #slogan{
     font-family: Oswald;
-    font-size: .7rem;
+    font-size: .8rem;
     line-height: 18px;
     font-weight: 500;
 }
@@ -138,17 +138,22 @@ nav{
     padding: 0;
 }
 #navbar ul li{
-    /* border: 1px solid red; */
+    transition: all 300ms ease-in-out;
     float: left;
     font-family: Oswald;
     text-transform: uppercase;
     font-size: .7rem;
-    padding: 3px 10px;
+    padding: 5px 10px;
     cursor: pointer;
     font-weight: 500;
 }
-
-
+#navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+#navbar ul li:hover{
+    background-color: var(--header_bg);
+}
 
 
 /* upto 650 px of viewport this styly will be applicable  */
