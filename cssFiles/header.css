@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+:root {
+    --header_bg: rgb(230, 240, 240);
+    --menu_sleep: rgb(87, 87, 87);
+}
+
+
+
+
+
+
+/* header design starts from here  */
+header {
+    width: 100%;
+    background-color: var(--header_bg);
+    padding: 3px 0px;
+
+}
+#banner_holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+#left_portion, #right_portion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#left_portion p, #right_portion p{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+#logo{
+    margin-right: 10px;
+}
+#logo img{
+    padding: 2px 0px;
+    width: auto;
+    height: 8vh;
+}
+
+
+
+
+#title{
+    font-family: Oswald;
+    font-size: 1.0rem; 
+    line-height: 20px;
+    font-weight: 500;
+}
+#slogan{
+    font-family: Oswald;
+    font-size: .7rem;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+
+
+
+
+.info_block {
+    font-family: Oswald;
+    margin-left: 10px;
+    text-align: center; 
+}
+.contact_title{
+    font-size: .65rem;
+    line-height: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+
+}
+.contact_info{
+    line-height: 15px;
+    font-size: .65rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: var(--menu_sleep);
+    transition: all 300ms ease-in-out;
+
+}
+.contact_info a{
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+.contact_info:hover{
+    color:black;
+}
+/* header design ends here  */
+
+
+
+
+
+/* upto 650 px of viewport this styly will be applicable  */
+@media only screen and (max-width: 650px) {
+    #banner_holder{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+
+
+    #left_portion {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+
+
+    #right_portion{
+        width: 100%;
+        justify-content: space-between;
+    }
+    #title, #slogan{
+        text-align: center;
+    }
+
+  }
+  /* END  */
