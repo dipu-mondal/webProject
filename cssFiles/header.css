@@ -8,6 +8,7 @@
 :root {
     --header_bg: rgb(230, 240, 240);
     --menu_sleep: rgb(87, 87, 87);
+    --nav_bg: rgb(202, 211, 211);
 }
 
 
@@ -86,7 +87,7 @@ header {
     text-align: center; 
 }
 .contact_title{
-    font-size: .65rem;
+    font-size: .7rem;
     line-height: 12px;
     font-weight: 500;
     text-transform: uppercase;
@@ -112,8 +113,40 @@ header {
 .contact_info:hover{
     color:black;
 }
+
 /* header design ends here  */
 
+
+
+
+
+nav{
+    background-color: var(--nav_bg);
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#navbar ul{
+    list-style-type: none;
+    /* border: 1px solid red; */
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#navbar ul li{
+    /* border: 1px solid red; */
+    float: left;
+    font-family: Oswald;
+    text-transform: uppercase;
+    font-size: .7rem;
+    padding: 3px 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
 
 
 
