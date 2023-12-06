@@ -121,7 +121,8 @@ header {
 
 
 nav{
-    background-color: var(--nav_bg);
+    background-image: linear-gradient(rgb(202, 211, 211),rgb(208, 218, 218),rgb(202, 211, 211));
+    /* background-color: var(--nav_bg); */
 }
 
 #navbar{
