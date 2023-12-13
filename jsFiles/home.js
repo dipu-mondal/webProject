@@ -51,6 +51,3 @@ const car = {
 
 console.log(car.start());
 console.log(car.stop());
-console.log(car.car_name);
-console.log(car.model);
-console.log(car.weight);
