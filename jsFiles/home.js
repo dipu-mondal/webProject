@@ -35,5 +35,22 @@ console.log(multiplication(10, 23));
 
 
 // -------------------------------------------------
-// Function 
+// javascript object practice
 //--------------------------------------------------
+const car = {
+    car_name: 'Tata Maruti',
+    model   : 'D850',
+    weight  : '900kg',
+    start   : function(){
+        return this.car_name + ' has been started!';
+    },
+    stop    : function(){
+        return this.car_name + ' has been stopped!';
+    }
+}
+
+console.log(car.start());
+console.log(car.stop());
+console.log(car.car_name);
+console.log(car.model);
+console.log(car.weight);
