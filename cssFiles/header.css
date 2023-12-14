@@ -2,13 +2,14 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
 }
 
 :root {
     --header_bg: rgb(230, 240, 240);
     --menu_sleep: rgb(155, 155, 155);
     --nav_bg: rgb(202, 211, 211);
+    --bgDeep: rgb(227, 227, 227);
+    --bgLight: rgb(239, 239, 239);
 }
 
 
@@ -21,6 +22,7 @@ header {
     width: 100%;
     background-color: var(--header_bg);
     padding: 5px 0px;
+    overflow: hidden;
 
 }
 #banner_holder{
@@ -160,38 +162,62 @@ nav{
 
 /* MAP SECTION STYLIZING STARTS FROM HEAR */
 #map_section{
-    border: 1px solid red;
-}
-#map_inner_holder{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-#map_portion{
-    position: relative;
     height: auto;
-    border: 1px solid red;
 }
-#map_portion img{
-    z-index: 50;
-}
-#address_portion{
 
+
+#map_wrapper{
+position: relative;
+background-color: var(--bgDeep);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 60vh;
+overflow: hidden;
 }
-#map_portion h3{
-    z-index: 100;
+
+#map_wrapper h4{
+    background-color: rgba(61, 61, 61, 0.3);
+    padding: 5px 20px;
     position: absolute;
-    top: 0;
-    padding: 3px; 
-    background-color: rgba(0, 0, 0, 0.3);
-    text-align: center;
+    top: 10px;
     font-family: Oswald;
-    margin: 0px auto;
+    color: rgb(255, 255, 255);
+    z-index: 110;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+#map_wrapper img{
+    height: 100%;
+    width: auto;
 }
 
 
+
+#address_wrapper{
+    font-family: Oswald;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgLight);
+    overflow: hidden;
+}
+
+#address_wrapper h5{
+    text-align: center;
+}
+#address_wrapper p{
+    margin: 0;
+    padding: 0;
+    font-size: .8rem;
+}
+#location_icon{
+    font-size: 50px;
+}
 
 
 
