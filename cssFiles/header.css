@@ -124,7 +124,6 @@ header {
 
 nav{
     background-image: linear-gradient(rgb(202, 211, 211),rgb(208, 218, 218),rgb(202, 211, 211));
-    /* background-color: var(--nav_bg); */
 }
 
 #navbar{
@@ -135,7 +134,6 @@ nav{
 }
 #navbar ul{
     list-style-type: none;
-    /* border: 1px solid red; */
     float: left;
     margin: 0;
     padding: 0;
@@ -157,6 +155,47 @@ nav{
 #navbar ul li:hover{
     background-color: var(--header_bg);
 }
+
+
+
+/* MAP SECTION STYLIZING STARTS FROM HEAR */
+#map_section{
+    border: 1px solid red;
+}
+#map_inner_holder{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#map_portion{
+    position: relative;
+    height: auto;
+    border: 1px solid red;
+}
+#map_portion img{
+    z-index: 50;
+}
+#address_portion{
+
+}
+#map_portion h3{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    padding: 3px; 
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: Oswald;
+    margin: 0px auto;
+}
+
+
+
+
+
+
 
 
 /* upto 650 px of viewport this styly will be applicable  */
