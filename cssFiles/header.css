@@ -17,7 +17,7 @@
 
 
 body{
-    background-color: var(--bgLight);
+    background-image: linear-gradient(to bottom left, rgb(175, 240, 255) 60%, rgb(36, 89, 133));
 }
 
 
@@ -292,12 +292,12 @@ nav{
 
 /* SUBSCRIBE SECTION STYLIZING STARTS  */
 #subs_section{
-    /* background-color:var(--header_bg); */
-    /* display: flex;
-    flex-direction: row;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 }
 #subs_section h5{
     text-align: center;
@@ -311,8 +311,8 @@ nav{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    width: 45%;
-    min-width: 500px;
+    width: 40%;
+    min-width: 450px;
     padding: 5px 25px;
     margin: 0px auto;
     font-family: Oswald;
