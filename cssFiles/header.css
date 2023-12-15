@@ -10,7 +10,27 @@
     --nav_bg: rgb(202, 211, 211);
     --bgDeep: rgb(227, 227, 227);
     --bgLight: rgb(239, 239, 239);
+    --button_color: rgb(9, 89, 76);
+    --button_hover_color: rgb(69, 123, 130);
+    --input_bg:rgb(173, 226, 233);
 }
+
+
+body{
+    background-color: var(--bgLight);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -124,6 +144,16 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
 nav{
     background-image: linear-gradient(rgb(202, 211, 211),rgb(208, 218, 218),rgb(202, 211, 211));
 }
@@ -160,50 +190,58 @@ nav{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MAP SECTION STYLIZING STARTS FROM HEAR */
 #map_section{
     height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 
 #map_wrapper{
-position: relative;
-background-color: var(--bgDeep);
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-height: 60vh;
-overflow: hidden;
-}
-
-#map_wrapper h4{
-    background-color: rgba(61, 61, 61, 0.3);
-    padding: 5px 20px;
-    position: absolute;
-    top: 10px;
-    font-family: Oswald;
-    color: rgb(255, 255, 255);
-    z-index: 110;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-
-}
-
-#map_wrapper img{
-    height: 100%;
-    width: auto;
+    /* border: 1px solid green; */
+    width: 75%;
+    background-color: var(--bgDeep);
+    padding: 5px;
+    height: 60vh;
+    overflow: hidden;
 }
 
 
 
 #address_wrapper{
+    padding: 5px;
+    width: 25%;
+    height: 100%;
+    /* border: 1px solid red; */
+    /* min-width: 300px; */
+    /* background-color: var(--bgLight); */
     font-family: Oswald;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--bgLight);
     overflow: hidden;
 }
 
@@ -214,10 +252,127 @@ overflow: hidden;
     margin: 0;
     padding: 0;
     font-size: .8rem;
+    text-wrap: wrap;
 }
 #location_icon{
-    font-size: 50px;
+    font-size: 6vh;
+    margin: 5px 0px;
 }
+.underLine{
+    text-decoration: underline;
+    color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SUBSCRIBE SECTION STYLIZING STARTS  */
+#subs_section{
+    /* background-color:var(--header_bg); */
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; */
+}
+#subs_section h5{
+    text-align: center;
+    margin-top: 15px;
+    font-family: Oswald;
+    text-transform: uppercase;
+}
+#subs_section form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    min-width: 500px;
+    padding: 5px 25px;
+    margin: 0px auto;
+    font-family: Oswald;
+    position: relative;
+    margin-bottom: 25px;
+
+}
+#email{
+    border: 2px solid var(--button_color);
+    border-radius: 20px;
+    background-color: var(--input_bg);
+    font-size: 1.3rem;
+    width: 100%;
+    height: 44px;
+    padding: 5px 140px 5px 20px;
+    outline: none;
+    position: relative;
+}
+#subscribe {
+    border: 0px;
+    background-color: var(--button_color);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 3px 10px;
+    position: absolute;
+    right: 26px;
+    height: 40px;
+    cursor: pointer;
+    color: rgb(253, 246, 238);;
+    transition: all 300ms ease-in-out;
+}
+#subscribe:hover{
+    background-color: var(--button_hover_color);
+
+}
+#email:focus{
+    background-color: rgb(253, 246, 238);
+}
+/* SUBSCRIBTION STYLIZING ENDS HERE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -249,5 +404,21 @@ overflow: hidden;
         text-align: center;
     }
 
+    #map_wrapper{
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+
+    #address_wrapper{
+        width: 100%;
+        height: auto;
+        padding: 10px 0px;
+    }
+
+
   }
+
+
+
   /* END  */
