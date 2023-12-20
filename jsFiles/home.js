@@ -13,54 +13,24 @@
 
 
 
-
-
-
 // -------------------------------------------------
 //function with parameter//
 //--------------------------------------------------
-// function sleep(names, times){
-//     console.log(names + ' is sleeping from '+ times + '\n');
-// }
-// sleep('Dipu Mondal', '8pm');
-// sleep('Rita Biswas', '10pm');
-
-
-
+function sleep(names, times){
+    console.log(names + ' is sleeping from '+ times + '\n');
+}
+sleep('Dipu Mondal', '8pm');
+sleep('Rita Biswas', '10pm');
 
 
 
 // -------------------------------------------------
 // Function with return value 
 //--------------------------------------------------
-// function multiplication(firstVal, lastVal){
-//     return firstVal * lastVal;
-// }
-// console.log(multiplication(10, 23));
-
-
-
-
-
-
-// -------------------------------------------------
-// javascript object practice
-//--------------------------------------------------
-// const car = {
-//     car_name: 'Tata Maruti',
-//     model   : 'D850',
-//     weight  : '900kg',
-//     start   : function(){
-//         return this.car_name + ' has been started!';
-//     },
-//     stop    : function(){
-//         return this.car_name + ' has been stopped!';
-//     }
-// }
-
-// console.log(car.start());
-// console.log(car.stop());
-
+function multiplication(firstVal, lastVal){
+    return firstVal * lastVal;
+}
+console.log(multiplication(10, 23));
 
 
 
@@ -95,3 +65,4 @@ if(number_got >= 33 && number_got <= 50){
 }
 
 console.log(status_exam);
+

@@ -2,14 +2,35 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
 }
 
 :root {
     --header_bg: rgb(230, 240, 240);
     --menu_sleep: rgb(155, 155, 155);
     --nav_bg: rgb(202, 211, 211);
+    --bgDeep: rgb(227, 227, 227);
+    --bgLight: rgb(239, 239, 239);
+    --button_color: rgb(9, 89, 76);
+    --button_hover_color: rgb(69, 123, 130);
+    --input_bg:rgb(173, 226, 233);
 }
+
+
+body{
+    background-color: var(--bgLight);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -21,6 +42,7 @@ header {
     width: 100%;
     background-color: var(--header_bg);
     padding: 5px 0px;
+    overflow: hidden;
 
 }
 #banner_holder{
@@ -122,6 +144,16 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
 nav{
     background-image: linear-gradient(rgb(202, 211, 211),rgb(208, 218, 218),rgb(202, 211, 211));
 }
@@ -158,38 +190,187 @@ nav{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MAP SECTION STYLIZING STARTS FROM HEAR */
 #map_section{
-    border: 1px solid red;
-}
-#map_inner_holder{
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#map_wrapper{
+    /* border: 1px solid green; */
+    width: 75%;
+    background-color: var(--bgDeep);
+    padding: 5px;
+    height: 60vh;
+    overflow: hidden;
+}
+
+
+
+#address_wrapper{
+    padding: 5px;
+    width: 25%;
+    height: 100%;
+    /* border: 1px solid red; */
+    /* min-width: 300px; */
+    /* background-color: var(--bgLight); */
+    font-family: Oswald;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#address_wrapper h5{
+    text-align: center;
+}
+#address_wrapper p{
+    margin: 0;
+    padding: 0;
+    font-size: .8rem;
+    text-wrap: wrap;
+}
+#location_icon{
+    font-size: 6vh;
+    margin: 5px 0px;
+}
+.underLine{
+    text-decoration: underline;
+    color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SUBSCRIBE SECTION STYLIZING STARTS  */
+#subs_section{
+    /* background-color:var(--header_bg); */
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; */
+}
+#subs_section h5{
+    text-align: center;
+    margin-top: 15px;
+    font-family: Oswald;
+    text-transform: uppercase;
+}
+#subs_section form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-}
-#map_portion{
+    width: 45%;
+    min-width: 500px;
+    padding: 5px 25px;
+    margin: 0px auto;
+    font-family: Oswald;
     position: relative;
-    height: auto;
-    border: 1px solid red;
-}
-#map_portion img{
-    z-index: 50;
-}
-#address_portion{
+    margin-bottom: 25px;
 
 }
-#map_portion h3{
-    z-index: 100;
-    position: absolute;
-    top: 0;
-    padding: 3px; 
-    background-color: rgba(0, 0, 0, 0.3);
-    text-align: center;
-    font-family: Oswald;
-    margin: 0px auto;
+#email{
+    border: 2px solid var(--button_color);
+    border-radius: 20px;
+    background-color: var(--input_bg);
+    font-size: 1.3rem;
+    width: 100%;
+    height: 44px;
+    padding: 5px 140px 5px 20px;
+    outline: none;
+    position: relative;
 }
+#subscribe {
+    border: 0px;
+    background-color: var(--button_color);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 3px 10px;
+    position: absolute;
+    right: 26px;
+    height: 40px;
+    cursor: pointer;
+    color: rgb(253, 246, 238);;
+    transition: all 300ms ease-in-out;
+}
+#subscribe:hover{
+    background-color: var(--button_hover_color);
+
+}
+#email:focus{
+    background-color: rgb(253, 246, 238);
+}
+/* SUBSCRIBTION STYLIZING ENDS HERE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -223,5 +404,21 @@ nav{
         text-align: center;
     }
 
+    #map_wrapper{
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+
+    #address_wrapper{
+        width: 100%;
+        height: auto;
+        padding: 10px 0px;
+    }
+
+
   }
+
+
+
   /* END  */
