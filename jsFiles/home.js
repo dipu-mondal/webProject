@@ -70,9 +70,9 @@
 // ------------------------------------
 // javascript loop practice
 // -----------------------------------
-let target = prompt('Please enter your number: ');
-let summation = 0;
-for (let counter = 1; counter <= target; counter++){
-    summation = summation + counter;
-}
-console.log(`Summation upto ${target} is: `, summation);
+// let target = prompt('Please enter your number: ');
+// let summation = 0;
+// for (let counter = 1; counter <= target; counter++){
+//     summation = summation + counter;
+// }
+// console.log(`Summation upto ${target} is: `, summation);
