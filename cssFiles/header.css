@@ -10,9 +10,9 @@
     --nav_bg: rgb(202, 211, 211);
     --bgDeep: rgb(227, 227, 227);
     --bgLight: rgb(239, 239, 239);
-    --button_color: rgb(9, 89, 76);
-    --button_hover_color: rgb(69, 123, 130);
-    --input_bg:rgb(173, 226, 233);
+    --button_color: rgb(14, 112, 1);
+    --button_hover_color: rgb(8, 71, 0);
+    --input_bg:rgb(195, 244, 250);
 }
 
 
@@ -209,59 +209,68 @@ nav{
 
 
 /* MAP SECTION STYLIZING STARTS FROM HEAR */
-#map_section{
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
 
 
 #map_wrapper{
-    /* border: 1px solid green; */
-    width: 75%;
     background-color: var(--bgDeep);
     padding: 5px;
-    height: 60vh;
-    overflow: hidden;
+    height: auto;
 }
+#map_wrapper iframe{
+    height: 100%;
+    width: 100%;
+}
+
+
+
 
 
 
 #address_wrapper{
     padding: 5px;
-    width: 25%;
-    height: 100%;
-    /* border: 1px solid red; */
-    /* min-width: 300px; */
-    /* background-color: var(--bgLight); */
     font-family: Oswald;
+}
+#address_portion{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
-#address_wrapper h5{
+
+
+.main_title{
+    font-family: Oswald;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
-#address_wrapper p{
+
+#address_portion h5, #subs_portion h5{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px;
+}
+#address_portion p{
     margin: 0;
     padding: 0;
-    font-size: .8rem;
+    font-size: .9rem;
     text-wrap: wrap;
+    line-height: normal;
 }
+
 #location_icon{
-    font-size: 6vh;
+    font-size: 4vh;
     margin: 5px 0px;
 }
 .underLine{
     text-decoration: underline;
     color: brown;
 }
+/* MAP SECTION STYLIZING ENDS HEAR */
 
 
 
@@ -270,66 +279,34 @@ nav{
 
 
 
+/* SUBSCRIBTION STYLIZING Starts HERE */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* SUBSCRIBE SECTION STYLIZING STARTS  */
-#subs_section{
-    /* background-color:var(--header_bg); */
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center; */
+#subs_portion{
+    margin-top: 5px;
+    border-top: 1px dotted rgb(105, 105, 105);
 }
-#subs_section h5{
-    text-align: center;
-    margin-top: 15px;
-    font-family: Oswald;
-    text-transform: uppercase;
-}
-#subs_section form{
+#subs_portion form{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    width: 45%;
-    min-width: 500px;
-    padding: 5px 25px;
-    margin: 0px auto;
+    padding: 5px;
+    width: 100%;
     font-family: Oswald;
-    position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 
 }
 #email{
     border: 2px solid var(--button_color);
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     background-color: var(--input_bg);
-    font-size: 1.3rem;
-    width: 100%;
-    height: 44px;
-    padding: 5px 140px 5px 20px;
+    font-size: 0.9rem;
+    width: 200px;
+    height: 30px;
+    padding: 2px 5px 2px 10px;
     outline: none;
-    position: relative;
 }
 #subscribe {
     border: 0px;
@@ -337,11 +314,9 @@ nav{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     outline: none;
-    font-size: 1.2rem;
-    padding: 3px 10px;
-    position: absolute;
-    right: 26px;
-    height: 40px;
+    font-size: 0.9rem;
+    padding: 2px 7px;
+    height: 30px;
     cursor: pointer;
     color: rgb(253, 246, 238);;
     transition: all 300ms ease-in-out;
@@ -351,8 +326,10 @@ nav{
 
 }
 #email:focus{
-    background-color: rgb(253, 246, 238);
-}
+    background-color: rgb(235, 235, 235);
+} 
+
+
 /* SUBSCRIBTION STYLIZING ENDS HERE */
 
 
@@ -404,17 +381,16 @@ nav{
         text-align: center;
     }
 
+
+
     #map_wrapper{
         width: 100%;
-        padding: 10px 0px;
     }
-
-
     #address_wrapper{
         width: 100%;
-        height: auto;
-        padding: 10px 0px;
     }
+
+
 
 
   }
@@ -422,3 +398,5 @@ nav{
 
 
   /* END  */
+
+ 
