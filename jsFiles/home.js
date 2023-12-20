@@ -77,3 +77,21 @@
 
 
 
+// JAVASCRIPT Switch statement testing
+let number_got = prompt('Enter your number: ');
+let status_exam; 
+if(number_got >= 33 && number_got <= 50){
+    status_exam = 'Got D grade. Best of luck for your future days.';
+} else if(number_got >= 51 && number_got <= 65){
+    status_exam = 'Got C grade. Best of luck for your future days.';
+}else if(number_got >= 66 && number_got <= 75){
+    status_exam = 'Got B grade. Best of luck for your future days.';
+}else if(number_got >= 76 && number_got <= 79){
+    status_exam = 'Got A grade. Best of luck for your future days.';
+}else if(number_got >= 80 && number_got <= 100){
+    status_exam = 'Got A+ grade. Best of luck for your future days.';
+}else{
+    status_exam = 'Please input a valid exam number.';
+}
+
+console.log(status_exam);
