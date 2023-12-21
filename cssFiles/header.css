@@ -16,20 +16,6 @@
 }
 
 
-body{
-    background-image: linear-gradient(to bottom left, rgb(175, 240, 255) 60%, rgb(36, 89, 133));
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -53,10 +39,6 @@ header {
 }
 
 
-
-
-
-
 #left_portion, #right_portion{
     display: flex;
     flex-direction: row;
@@ -70,10 +52,6 @@ header {
 }
 
 
-
-
-
-
 #logo{
     margin-right: 10px;
 }
@@ -82,7 +60,6 @@ header {
     width: auto;
     height: 10vh;
 }
-
 
 
 
@@ -100,9 +77,6 @@ header {
     line-height: 20px;
     font-weight: 500;
 }
-
-
-
 
 
 .info_block {
@@ -223,12 +197,10 @@ nav{
 
 
 
-
-
-
 #address_wrapper{
     padding: 5px;
     font-family: Oswald;
+    height: auto;
 }
 #address_portion{
     display: flex;
@@ -278,29 +250,7 @@ nav{
 
 
 
-
-/* SUBSCRIBTION STYLIZING Starts HERE */
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* SUBSCRIBE SECTION STYLIZING STARTS  */
-#subs_section{
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
 
 #subs_portion{
     margin-top: 5px;
@@ -313,10 +263,6 @@ nav{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    min-width: 450px;
-    padding: 5px 25px;
-    margin: 0px auto;
     padding: 5px;
     width: 100%;
     font-family: Oswald;
@@ -355,7 +301,6 @@ nav{
     background-color: rgb(235, 235, 235);
 } 
 
-
 /* SUBSCRIBTION STYLIZING ENDS HERE */
 
 
@@ -384,7 +329,7 @@ nav{
 
 /* upto 650 px of viewport this styly will be applicable  */
 @media only screen and (max-width: 650px) {
-    
+
     #banner_holder{
         display: flex;
         flex-direction: column;
@@ -421,5 +366,5 @@ nav{
 
 
 
-  }
+}
 
