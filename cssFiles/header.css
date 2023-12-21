@@ -186,8 +186,6 @@ nav{
 
 
 #map_wrapper{
-    background-color: var(--bgDeep);
-    padding: 5px;
     height: auto;
 }
 #map_wrapper iframe{
@@ -197,7 +195,7 @@ nav{
 
 
 
-#address_wrapper{
+#add_sub_wrapper{
     padding: 5px;
     font-family: Oswald;
     height: auto;
@@ -358,7 +356,7 @@ nav{
     #map_wrapper{
         width: 100%;
     }
-    #address_wrapper{
+    #add_sub_wrapper{
         margin-top: 20px;
         width: 100%;
     }

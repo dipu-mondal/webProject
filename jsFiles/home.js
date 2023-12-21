@@ -76,3 +76,32 @@
 //     summation = summation + counter;
 // }
 // console.log(`Summation upto ${target} is: `, summation);
+
+
+
+
+// for (let counter =1; counter<=100; counter++){
+//     if(counter % 2 === 0 ){
+//         console.log(counter, 'is Even.');
+//     }
+// }
+
+
+// const students = {
+//     name : 'Dipu Mondal',
+//     id : 114,
+//     subject : 'Accounting',
+//     year : 'Fourth'
+// };
+
+// for (let key in students){
+//     console.log(students[key]);
+// }
+
+
+// let gameNum = 12;
+// let userNum = prompt('Guess the number: ');
+// while(gameNum != userNum){
+//     userNum = prompt('Wrong Guess!! Try again: ');
+// }
+// console.log('Congratulations!!!');
