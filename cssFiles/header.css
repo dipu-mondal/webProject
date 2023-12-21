@@ -17,7 +17,7 @@
 
 
 body{
-    background-color: var(--bgLight);
+    background-image: linear-gradient(to bottom left, rgb(175, 240, 255) 60%, rgb(36, 89, 133));
 }
 
 
@@ -281,16 +281,42 @@ nav{
 
 /* SUBSCRIBTION STYLIZING Starts HERE */
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* SUBSCRIBE SECTION STYLIZING STARTS  */
+#subs_section{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
 #subs_portion{
     margin-top: 5px;
     border-top: 1px dotted rgb(212, 212, 212);
-}
+  }
+  
 #subs_portion form{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    width: 40%;
+    min-width: 450px;
+    padding: 5px 25px;
+    margin: 0px auto;
     padding: 5px;
     width: 100%;
     font-family: Oswald;
