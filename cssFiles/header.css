@@ -384,6 +384,7 @@ nav{
 
 /* upto 650 px of viewport this styly will be applicable  */
 @media only screen and (max-width: 650px) {
+    
     #banner_holder{
         display: flex;
         flex-direction: column;
@@ -422,8 +423,3 @@ nav{
 
   }
 
-
-
-  /* END  */
-
- 
