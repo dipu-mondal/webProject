@@ -105,3 +105,9 @@
 //     userNum = prompt('Wrong Guess!! Try again: ');
 // }
 // console.log('Congratulations!!!');
+
+
+const mulArrow = (val1, val2) => {
+    return val1 * val2;
+}
+console.log(mulArrow(12,24));
