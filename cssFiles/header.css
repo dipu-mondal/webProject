@@ -351,6 +351,9 @@ nav{
 
 
 /* MISSION VISSION STYLIZING STARTS FROM HERE  */
+.block{
+    margin-bottom: 10px;
+}
 .mvg_container{
     height: 100%;
     width: 90%;

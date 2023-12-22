@@ -107,7 +107,42 @@
 // console.log('Congratulations!!!');
 
 
-const mulArrow = (val1, val2) => {
-    return val1 * val2;
-}
-console.log(mulArrow(12,24));
+// const mulArrow = (val1, val2) => {
+//     return val1 * val2;
+// }
+// console.log(mulArrow(12,24));
+
+
+// const valArr = Array(1,2,3,4,5,6,7,8);
+// valArr.forEach((val) => console.log(`${val}^2 = ${val**2}`));
+// let newArr = valArr.map((val) => {return val**2});
+// console.log(newArr);
+
+// const evenNum = valArr.filter((val) => {return val % 2 === 0});
+// console.log(evenNum);
+
+
+
+
+
+
+// let userNum = prompt('Enter a number: ');
+// let counter = 1;
+// const newArr = Array();
+// while(counter <= userNum){
+//     newArr.push(counter);
+//     counter++;
+// }
+
+// const evenMaker = (val)=>{return val % 2 == 0};
+// const sumMaker = (res, current) => {return res + current;}
+// const factoMaker = (res, current) => {return res * current;}
+
+
+// const evenArr = newArr.filter(evenMaker);
+// let summation = newArr.reduce(sumMaker);
+// let factorial = newArr.reduce(factoMaker);
+
+// console.log(evenArr);
+// console.log(summation);
+// console.log(factorial);
