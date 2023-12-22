@@ -175,16 +175,7 @@ nav{
 
 
 
-
-
-
-
-
-
-
 /* MAP SECTION STYLIZING STARTS FROM HEAR */
-
-
 #map_wrapper{
     height: auto;
 }
@@ -192,8 +183,6 @@ nav{
     height: 100%;
     width: 100%;
 }
-
-
 
 #add_sub_wrapper{
     padding: 5px;
@@ -205,18 +194,6 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-
-
-.main_title{
-    font-family: Oswald;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
 }
 
 #address_portion h6, #subs_portion h6{
@@ -248,10 +225,66 @@ nav{
 
 
 
+
+
+
+
+
+
+
+/* TITLE RIBBON STYLIZING STARTS FROM HEAR  */
+.title_style, .outer_box, .boxfor_border, .inner_box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-family: Oswald;
+}
+.inner_box{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin: 2px;
+    background-color: var(--button_color);
+}
+
+.outer_box{
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid var(--button_color);
+}
+.boxfor_border{
+    border-top: 1px dotted black;
+    position: relative;
+    width: 25%;
+    min-width: 250px;
+}
+
+/* TITLE RIBBON STYLIZING ENDS HERE  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* SUBSCRIBE SECTION STYLIZING STARTS  */
 
 #subs_portion{
-    margin-top: 5px;
+    margin-top: 10px;
     border-top: 1px dotted rgb(212, 212, 212);
   }
   
@@ -268,35 +301,45 @@ nav{
 
 }
 #email{
-    border: 2px solid var(--button_color);
+    border: 1px solid rgb(20, 127, 91);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: var(--input_bg);
+    background-color:rgb(181, 253, 229);
     font-size: 0.9rem;
     width: 200px;
     height: 30px;
-    padding: 2px 5px 2px 10px;
+    padding: 2px 5px 2px 15px;
     outline: none;
 }
+#email::placeholder{
+    font-family: Oswald;
+    font-size: .9rem;
+    font-weight:500;
+    text-align: center;
+}
 #subscribe {
-    border: 0px;
-    background-color: var(--button_color);
+    border: 1px solid rgb(20, 127, 91);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    font-weight: 500;
+    background-color: aquamarine;
     outline: none;
     font-size: 0.9rem;
-    padding: 2px 7px;
+    padding: 2px 7px 2px 5px;
+    margin-left: -1px;
     height: 30px;
     cursor: pointer;
-    color: rgb(253, 246, 238);;
+    color: black;
     transition: all 300ms ease-in-out;
 }
 #subscribe:hover{
-    background-color: var(--button_hover_color);
+    background-color: rgb(20, 127, 91);
+    color: white;
 
 }
 #email:focus{
-    background-color: rgb(235, 235, 235);
+    background-color: white;
+
 } 
 
 /* SUBSCRIBTION STYLIZING ENDS HERE */
@@ -309,14 +352,56 @@ nav{
 
 
 
+/* MISSION VISSION STYLIZING STARTS FROM HERE  */
+.mvg_container{
+    height: 100%;
+    width: 90%;
+    margin: 0px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--bgLight);
+    transition: all 300ms ease-in-out;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.toper_portion{
+    padding: 5px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 30px;
+    background-color: aquamarine;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
 
 
+.toper_portion:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
 
+.toper_portion i{
+    font-size: 2rem;
+}
 
 
+.toper_portion h6{
+    margin-top: 2px;
+    font-family: Oswald;
+    text-transform: uppercase;
+}
+.lower_portion{
+    font-family: Oswald;
+    padding: 5px;
+}
+.lower_portion p{
+    text-align: center;
+}
 
-
+/* MISSION VISSION STYLIZING ENDS HERE  */
 
 
 
